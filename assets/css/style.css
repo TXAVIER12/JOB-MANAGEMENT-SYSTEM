@@ -1,0 +1,24 @@
+/* Basic responsive admin-style layout */
+body{font-family:Inter, Arial, sans-serif;margin:0;background:#f4f6f8;color:#222}
+.wrap{display:flex;min-height:100vh}
+.sidebar{width:220px;background:#1f2937;color:#fff;padding:20px;box-sizing:border-box}
+.sidebar h3{margin-top:0}
+.sidebar nav a{display:block;color:#cbd5e1;padding:8px 0;text-decoration:none}
+.main{flex:1;padding:20px}
+.center-box{max-width:420px;margin:80px auto;padding:20px;background:#fff;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.card{background:#fff;padding:12px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.04);margin-bottom:16px}
+.table{width:100%;border-collapse:collapse;background:#fff}
+.table th, .table td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+label{display:block;margin-top:8px}
+input, select, button{display:block;width:100%;padding:8px;margin-top:6px;border:1px solid #ddd;border-radius:6px;box-sizing:border-box}
+button{cursor:pointer;background:#2563eb;color:#fff;border:none}
+.errors{background:#fee2e2;color:#b91c1c;padding:8px;border-radius:6px;margin-bottom:8px}
+.success{background:#dcfce7;color:#065f46;padding:8px;border-radius:6px;margin-bottom:8px}
+
+/* modal */
+.modal{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center}
+.modal.hidden{display:none}
+.modal-content{background:#fff;padding:20px;border-radius:8px;min-width:320px}
+
+/* responsive */
+@media(max-width:800px){.wrap{flex-direction:column}.sidebar{width:100%}}
